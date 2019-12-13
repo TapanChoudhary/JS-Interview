@@ -1,0 +1,29 @@
+#app {
+  display: grid;
+  height: 97vh;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  grid-auto-rows: minmax(5rem, min-content);
+}
+
+header {
+  background: red;
+  grid-column: span 4;
+}
+
+main {
+  background: royalblue;
+  grid-row: 2;
+  grid-column: span 3;
+}
+
+aside {
+  background: seagreen;
+  grid-row: 2;
+}
+
+footer {
+  background: slategrey;
+  grid-row: 3;
+  grid-column: span 4;
+}
