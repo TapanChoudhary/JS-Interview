@@ -15,7 +15,8 @@ function Toyota(options) {
 //To have access to methods available for Car
 Toyota.prototype = Object.create(Car.prototype);
 
-//To being able add new method to Toyota
+//To being able add new method to Toyota - Incorrect Assumption
+// Refer to - https://stackoverflow.com/questions/8453887/why-is-it-necessary-to-set-the-prototype-constructor
 Toyota.prototype.constructor = Toyota;
 
 Toyota.prototype.honk = function() {
